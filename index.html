@@ -1,92 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Venzon | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Venzon | Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f0f0f;
+        color: white;
+    }
+
+    /* NAV */
+    header {
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    nav a:hover {
+        opacity: 1;
+    }
+
+    /* MAIN LAYOUT */
+    main {
+        display: flex;
+        gap: 30px;
+        padding: 40px 60px;
+        align-items: flex-start;
+    }
+
+    /* LEFT CARD */
+    section:first-child {
+        width: 30%;
+        background: #1c1c1c;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    section:first-child img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* RIGHT CONTENT */
+    section:last-child {
+        width: 70%;
+        background: #1c1c1c;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    h1, h2, h3, h4 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    /* GRID FOR "WHAT I'M DOING" */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #2a2a2a;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px;
+        opacity: 0.6;
+    }
+</style>
+
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Main Container -->
-    <main>
+<main>
 
-        <!-- Left Profile Section -->
-        <section>
-            <img src="dey.png" alt="Profile Picture" width="200">
+    <!-- LEFT -->
+    <section>
+        <img src="dey.png" alt="Profile Picture">
 
-            <h1>Andrea Venzon</h1>
-            <p><strong>IT Student</strong></p>
-            <p>Aspiring Web Developer</p>
+        <h1>Andrea Venzon</h1>
+        <p><strong>IT Student</strong></p>
+        <p>Aspiring Web Developer</p>
 
-            <h3>Contact</h3>
-            <p>Email: andreavenson0523@gmail.com</p>
-            <p>Phone: 0946 315 7613</p>
-            <p>Location: Pampanga, Philippines</p>
-        </section>
+        <h3>Contact</h3>
+        <p>Email: andreavenzon0523@gmail.com</p>
+        <p>Phone: 0946 315 7613</p>
+        <p>Location: Pampanga, Philippines</p>
+    </section>
 
-        <!-- Right About Section -->
-        <section>
-            <h2>About Me</h2>
+    <!-- RIGHT -->
+    <section>
+        <h2>About Me</h2>
 
-            <p>
-                Hi! I’m Andrea Venzon, a first-year Information Technology student 
-                with a growing passion for web development and digital design.
-            </p>
+        <p>Hi! I’m Andrea Venzon, a first-year IT student with a passion for web development and digital design.</p>
+        <p>I enjoy learning how websites work and how design connects with functionality.</p>
+        <p>I’m currently improving my skills in HTML, CSS, and responsive design.</p>
 
-            <p>
-                I enjoy exploring how websites are built and how design and 
-                functionality come together to create meaningful user experiences.
-            </p>
+        <h2>What I’m Doing</h2>
 
-            <p>
-                Currently, I am improving my skills in HTML, CSS, and basic web design.
-            </p>
+        <div class="grid">
 
-            <p>
-                I am still in the learning stage, but I am motivated to grow step by step.
-            </p>
-
-            <h2>What I’m Doing</h2>
-
-            <div>
-                <h4>Personal Portfolio Website</h4>
-                <p>A simple HTML and CSS website showcasing my profile and skills.</p>
+            <div class="card">
+                <h4>Portfolio Website</h4>
+                <p>Personal HTML & CSS project.</p>
             </div>
 
-            <div>
-                <h4>Basic Web Layout Designs</h4>
-                <p>Simple UI exercises using HTML and CSS.</p>
+            <div class="card">
+                <h4>Layout Designs</h4>
+                <p>Practicing UI structure & spacing.</p>
             </div>
 
-            <div>
+            <div class="card">
                 <h4>GitHub Practice</h4>
-                <p>Practicing commits, repositories, and version control.</p>
+                <p>Commits, repos, version control.</p>
             </div>
 
-            <div>
-                <h4>Academic IT Activities</h4>
-                <p>School tasks to improve programming and web skills.</p>
+            <div class="card">
+                <h4>Academic Tasks</h4>
+                <p>School IT activities and exercises.</p>
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Andrea Venzon</p>
-    </footer>
+</main>
+
+<footer>
+    <p>© Andrea Venzon</p>
+</footer>
 
 </body>
 </html>
