@@ -26,7 +26,7 @@
     }
 
     nav a {
-        color: white;
+        color: #8c49e9;
         text-decoration: none;
         opacity: 0.8;
     }
@@ -46,9 +46,10 @@
     /* LEFT CARD */
     section:first-child {
         width: 30%;
-        background: #1c1c1c;
+        background: #272829;
         padding: 25px;
         border-radius: 20px;
+        border: 1px solid white;
     }
 
     section:first-child img {
@@ -59,10 +60,11 @@
 
     /* RIGHT CONTENT */
     section:last-child {
-        width: 70%;
-        background: #1c1c1c;
+        width: 80%;
+        background: #272829;
         padding: 30px;
         border-radius: 20px;
+        border: 1px solid white;
     }
 
     h1, h2, h3, h4 {
@@ -80,12 +82,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         margin-top: 20px;
+        
     }
 
     .card {
         background: #2a2a2a;
         padding: 15px;
         border-radius: 15px;
+        border: 1px solid white;
     }
 
     /* FOOTER */
@@ -114,7 +118,7 @@
 
     <!-- LEFT -->
     <section>
-        <img src="dey.png" alt="Profile Picture">
+        <img src="andrea.png" alt="Profile Picture">
 
         <h1>Andrea Venzon</h1>
         <p><strong>IT Student</strong></p>
@@ -128,35 +132,48 @@
 
     <!-- RIGHT -->
     <section>
-        <h2>About Me</h2>
+        <h1>About Me</h1>
 
-        <p>Hi! I’m Andrea Venzon, a first-year IT student with a passion for web development and digital design.</p>
-        <p>I enjoy learning how websites work and how design connects with functionality.</p>
-        <p>I’m currently improving my skills in HTML, CSS, and responsive design.</p>
-
-        <h2>What I’m Doing</h2>
+        <b><p>Hi! I’m Andrea Venzon, a first-year Information Technology student with a growing passion for web development and digital design.</p></b>
+        <b><p>I enjoy exploring how websites are built and how design and functionality come together to create meaningful user experiences. I also like working on creative digital projects, especially those that are clean, simple, and well-organized.</p></b>
+        <b><p>Currently, I am improving my skills in HTML, CSS, and basic web design, while continuously learning how to build responsive and visually appealing websites.</p></b>
+        <b><p>I am still in the learning stage, but I am motivated to grow step by step and develop my confidence in creating real-world web projects.</p></b>  
+        <h1>What I’m Doing</h1>
 
         <div class="grid">
 
             <div class="card">
-                <h4>Portfolio Website</h4>
-                <p>Personal HTML & CSS project.</p>
+                <h3>Personal Portfolio Website</h3>
+                <p>A simple HTML and CSS website showcasing my profile, skills, and goals as an IT student.</p>
             </div>
 
             <div class="card">
-                <h4>Layout Designs</h4>
-                <p>Practicing UI structure & spacing.</p>
+                <h3>Basic Web Layout Designs</h3>
+                <p>Simple UI exercises using HTML and CSS to practice layout, positioning, and responsiveness.</p>
             </div>
 
             <div class="card">
-                <h4>GitHub Practice</h4>
-                <p>Commits, repos, version control.</p>
+                <h3>GitHub Practice</h3>
+                <p>Practice work on using GitHub for commits, repositories, and version control.</p>
             </div>
 
             <div class="card">
-                <h4>Academic Tasks</h4>
-                <p>School IT activities and exercises.</p>
+                <h3>Academic IT Activities</h3>
+                <p>School activities and hands-on tasks that help improve my basic programming and web development skills.</p>
             </div>
+
+                <style>
+                    .card h3 {
+                        color: #d0afff;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+
+                    .card p {
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                </style>
 
         </div>
 
