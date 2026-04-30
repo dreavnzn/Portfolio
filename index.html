@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Andrea Venzon | Portfolio</title>
 
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
     body {
         margin: 0;
@@ -50,7 +53,15 @@
         padding: 25px;
         border-radius: 20px;
         border: 1px solid white;
-    }
+        font-size: 20px;
+}
+
+/* Center ONLY name + role */
+section:first-child h1,
+section:first-child p:nth-of-type(1),
+section:first-child p:nth-of-type(2) {
+    text-align: center;
+}
 
     section:first-child img {
         width: 100%;
@@ -58,9 +69,17 @@
         margin-bottom: 15px;
     }
 
+    /* CONTACT ICONS */
+    section:first-child p i {
+        color: #a855f7;
+        margin-right: 10px;
+        font-size: 35px;
+        
+    }
+
     /* RIGHT CONTENT */
     section:last-child {
-        width: 80%;
+        width: 70%;
         background: #272829;
         padding: 30px;
         border-radius: 20px;
@@ -76,22 +95,108 @@
         opacity: 0.9;
     }
 
-    /* GRID FOR "WHAT I'M DOING" */
+    /* GRID */
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 20px;
         margin-top: 20px;
-        
     }
 
+    /* CARD WITH ICON */
     .card {
         background: #2a2a2a;
-        padding: 15px;
+        padding: 20px;
         border-radius: 15px;
         border: 1px solid white;
+
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
     }
 
+    .card i {
+        font-size: 40px;
+        color: #a855f7;
+        margin-top: 5px;
+    }
+
+    .card h3 {
+        color: #d0afff;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .card p {
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+
+    .badge {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 2px 35px;
+        background: #a855f7;
+        color: white;
+        border-radius: 6px;
+        font-size: 22px;
+        width: fit-content;
+        margin: 5px auto;
+}
+
+    section:first-child p:nth-of-type(2) {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #a855f7;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 2px;
+}
+
+    .divider {
+        
+        border-bottom: 4px solid #a855f7;
+        width: 10%;
+        margin: 10px 0 20px 0;
+}
+
+    .contact {
+        font-size: 16px;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+    .contact i {
+        font-size: 18px;
+        color: #a855f7;
+}
+
+    .contact span.value {
+        font-weight: bold;
+}
+
+    main {
+        min-width: 900px;
+    }
+
+    section:first-child {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    section:last-child {
+        flex: 1;
+    }
+
+    body {
+        font-size: 16px;
+    }
     /* FOOTER */
     footer {
         text-align: center;
@@ -121,59 +226,64 @@
         <img src="andrea.png" alt="Profile Picture">
 
         <h1>Andrea Venzon</h1>
-        <p><strong>IT Student</strong></p>
+        <p class="badge">IT Student</p>
         <p>Aspiring Web Developer</p>
 
         <h3>Contact</h3>
-        <p>Email: andreavenzon0523@gmail.com</p>
-        <p>Phone: 0946 315 7613</p>
-        <p>Location: Pampanga, Philippines</p>
+        <p class="contact"><i class="fas fa-envelope"></i> <span>Email:</span> <span class="value">andrea@gmail.com</span></p>
+
+        <p class="contact"><i class="fas fa-phone"></i> <span>Phone:</span> <span class="value">0946 315 7613</span></p>
+
+        <p class="contact"><i class="fas fa-location-dot"></i> <span>Location:</span> <span class="value">Pampanga, Philippines</span></p>
     </section>
 
     <!-- RIGHT -->
     <section>
         <h1>About Me</h1>
+        <div class="divider"></div>
 
-        <b><p>Hi! I’m Andrea Venzon, a first-year Information Technology student with a growing passion for web development and digital design.</p></b>
-        <b><p>I enjoy exploring how websites are built and how design and functionality come together to create meaningful user experiences. I also like working on creative digital projects, especially those that are clean, simple, and well-organized.</p></b>
-        <b><p>Currently, I am improving my skills in HTML, CSS, and basic web design, while continuously learning how to build responsive and visually appealing websites.</p></b>
-        <b><p>I am still in the learning stage, but I am motivated to grow step by step and develop my confidence in creating real-world web projects.</p></b>  
+        <p><b>Hi! I’m Andrea Venzon, a first-year Information Technology student with a growing passion for web development and digital design.</b></p>
+        <p><b>I enjoy exploring how websites are built and how design and functionality come together to create meaningful user experiences. I also like working on creative digital projects, especially those that are clean, simple, and well-organized.</b></p>
+        <p><b>Currently, I am improving my skills in HTML, CSS, and basic web design, while continuously learning how to build responsive and visually appealing websites.</b></p>
+        <p><b>I am still in the learning stage, but I am motivated to grow step by step and develop my confidence in creating real-world web projects.</b></p>
+
         <h1>What I’m Doing</h1>
+        <div class="divider"></div>
 
         <div class="grid">
 
             <div class="card">
-                <h3>Personal Portfolio Website</h3>
-                <p>A simple HTML and CSS website showcasing my profile, skills, and goals as an IT student.</p>
+                <i class="fas fa-globe"></i>
+                <div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p><b>A simple HTML and CSS website showcasing my profile, skills, and goals as an IT student.</b></p>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Basic Web Layout Designs</h3>
-                <p>Simple UI exercises using HTML and CSS to practice layout, positioning, and responsiveness.</p>
+                <i class="fas fa-laptop-code"></i>
+                <div>
+                    <h3>Basic Web Layout Designs</h3>
+                    <p><b>Simple UI exercises using HTML and CSS to practice layout, positioning, and responsiveness.</b></p>
+                </div>
             </div>
 
             <div class="card">
-                <h3>GitHub Practice</h3>
-                <p>Practice work on using GitHub for commits, repositories, and version control.</p>
+                <i class="fab fa-github"></i>
+                <div>
+                    <h3>GitHub Practice</h3>
+                    <p><b>Practice work on using GitHub for commits, repositories, and version control.</b></p>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Academic IT Activities</h3>
-                <p>School activities and hands-on tasks that help improve my basic programming and web development skills.</p>
+                <i class="fas fa-brain"></i>
+                <div>
+                    <h3>Academic IT Activities</h3>
+                    <p><b>School activities and hands-on tasks that help improve my basic programming and web development skills.
+</b></p>
+                </div>
             </div>
-
-                <style>
-                    .card h3 {
-                        color: #d0afff;
-                        font-weight: bold;
-                        font-size: 20px;
-                    }
-
-                    .card p {
-                        font-weight: bold;
-                        font-size: 18px;
-                    }
-                </style>
 
         </div>
 
