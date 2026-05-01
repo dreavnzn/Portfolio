@@ -21,24 +21,38 @@
         padding: 20px 50px;
     }
 
-    nav ul {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        justify-content: flex-end;
-    }
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
 
-    nav a {
-        color: #8c49e9;
-        text-decoration: none;
-        opacity: 0.8;
-        transition: 0.3s;
-    }
+/* NAV LINKS BASE STYLE */
+nav a {
+    color: #8c49e9;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
 
-    nav a:hover {
-        opacity: 1;
-        color: #a855f7;
-    }
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* HOVER EFFECT (BOX GROW) */
+nav a:hover {
+    background: #a855f7;
+    color: white;
+    transform: scale(1.1);
+    
+}
+
+/* ACTIVE LINK */
+nav a.active {
+    background: #a855f7;
+    color: white;
+}
 
     /* MAIN LAYOUT */
     main {
@@ -47,6 +61,8 @@
         padding: 40px 60px;
         align-items: flex-start;
     }
+
+    
 
     /* LEFT CARD */
     section:first-child {
