@@ -18,7 +18,8 @@ body {
 h1 {
     text-align: left;
     color: #a855f7;
-    font-size: 32px;
+    font-size: 40px;
+    -webkit-text-stroke: 0.3px white;
 }
 
 p {
@@ -43,9 +44,12 @@ a:hover {
 
 /* SKILLS SECTION */
 h2 {
+    font-size: 30px;
     margin-top: 40px;
     color: #a855f7;
     text-align: left;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px white;
 }
 
 h3 {
@@ -84,7 +88,9 @@ nav a {
     padding: 6px 12px;
     border-radius: 8px;
     display: inline-block;
-    font-size: 21px;
+    font-size: 17px;
+    font-weight: normal;
+
 }
 
 /* HOVER EFFECT (BOX GROW) */
@@ -99,6 +105,72 @@ nav a:hover {
 nav a.active {
     background: #a855f7;
     color: white;
+}
+
+.container {
+    background: #272829;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    
+}
+.container {
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+}
+
+.btn-container {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.btn-container a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #a855f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+.btn-container a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #a855f7;
+}
+
+.skill-container {
+    background: #272829;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid white;
+    transition: 0.3s;
+    width: 30%;
+
+}
+
+.skill-container:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.skill-container h3 {
+    color: #d0afff;
+    margin-bottom: 5px;
+}
+
+.skill-container p {
+    opacity: 0.8;
+    margin: 0;
 }
 
 </style>
@@ -122,25 +194,37 @@ nav a.active {
 <body>
 
 <!-- WELCOME SECTION -->
-<h1>WELCOME TO MY PORTFOLIO</h1>
+<div class="container">
+    <h1>WELCOME TO MY PORTFOLIO</h1>
 
-<p>Hi! I’m Andrea Venzon, an aspiring Web Developer learning HTML & CSS.</p>
+    <p>Hi! I’m Andrea Venzon, an aspiring Web Developer learning HTML & CSS.</p>
 
-<a href="#skills">View My Skills</a>
+    <div class="btn-container">
+    <a href="#skills">View My Skills</a>
+</div>
+</div>
 
 <hr>
 
 <!-- SKILLS SECTION -->
+<div class="container">
 <h2 id="skills">My Skills</h2>
 
-<h3>HTML</h3>
-<p>Structure and layout of web pages</p>
+<div class="skill-container">
+    <h3>HTML</h3>
+    <p>Structure and layout of web pages</p>
+</div>
 
-<h3>CSS</h3>
-<p>Styling and design of websites</p>
+<div class="skill-container">
+    <h3>CSS</h3>
+    <p>Styling and design of websites</p>
+</div>
 
-<h3>GitHub</h3>
-<p>Basic version control and commits</p>
+<div class="skill-container">
+    <h3>GitHub</h3>
+    <p>Basic version control and commits</p>
+</div>
+</div>
 
 </body>
 </html>
