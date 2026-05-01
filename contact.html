@@ -4,6 +4,114 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Andrea Venzon</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    padding: 40px;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #8c49e9;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+
+/* CONTAINER */
+.container {
+    background: #272829;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* TITLE */
+h1 {
+    color: #a855f7;
+    font-size: 32px;
+}
+
+/* FORM */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #a855f7;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9333ea;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+/* NAV LINKS BASE STYLE */
+nav a {
+    color: #8c49e9;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+
+}
+
+/* HOVER EFFECT (BOX GROW) */
+nav a:hover {
+    background: #a855f7;
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+/* ACTIVE LINK */
+nav a.active {
+    background: #a855f7;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.6;
+}
+</style>
+
 </head>
 
 <body>
@@ -19,22 +127,24 @@
 </header>
 
 <!-- CONTACT SECTION -->
-<h1>Contact Me</h1>
+<div class="container">
+    <h1>Contact Me</h1>
 
-<p>If you'd like to reach out, feel free to send a message!</p>
+    <p>If you'd like to reach out, feel free to send a message!</p>
 
-<form>
-    <label>Name</label><br>
-    <input type="text" placeholder="Your name"><br><br>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your name">
 
-    <label>Email</label><br>
-    <input type="email" placeholder="Your email"><br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Your email">
 
-    <label>Message</label><br>
-    <textarea rows="4" placeholder="Your message"></textarea><br><br>
+        <label>Message</label>
+        <textarea rows="4" placeholder="Your message"></textarea>
 
-    <button type="submit">Send Message</button>
-</form>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
 
 <footer>
     <p>© Andrea Venzon</p>
